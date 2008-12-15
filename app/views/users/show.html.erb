@@ -1,0 +1,25 @@
+<h2><%= @user.login %></h2>
+
+<p>
+  <b>Login:</b> <%= h( @user.login ) %>
+</p>
+
+<p>
+  <b>Name:</b> <%= h( @user.name ) %>
+</p>
+
+<p>
+  <b>E-mail:</b> <%= h( @user.email ) %>
+</p>
+
+<p>
+  <b>PSN:</b> <%= h( @user.psn ) %>
+</p>
+
+<p>
+  <b>Avatar:</b> <%= if not h( @user.avatar_url ).blank? then image_tag( h(@user.avatar_url) ) end -%>
+</p>
+
+<p>
+  <b>TimeZone:</b> <%= h( @user.time_zone ) %>
+</p>

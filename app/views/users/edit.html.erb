@@ -1,0 +1,39 @@
+<h2>Edit Profile - <%= @user.login %></h2>
+
+<% form_for( @user ) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :login %><br />
+    <%= @user.login %>
+  </p>
+
+  <p>
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </p>
+
+  <p>
+    <%= f.label :email %><br />
+    <%= f.text_field :email %>
+  <p>
+
+  <p>
+    <%= f.label :psn, "PSN" %><br />
+    <%= f.text_field :psn %>
+  </p>
+
+  <p>
+    <%= f.label :time_zone %><br />
+    <%= f.time_zone_select :time_zone, @time_zones %>
+  </p>
+
+  <p>
+    <%= f.label :avatar_url %><br />
+    <%= f.text_field :avatar_url %>
+  </p>
+
+  <p>
+    <%= f.submit "Update" %>
+  </p>
+<% end %>
