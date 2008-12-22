@@ -1,0 +1,17 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  name: MyString
+  abbreviation: MyString
+  forum_thread_link: MyString
+  clan_thread_link: MyString
+  online_leaderboards_link: MyString
+  official_game_link: MyString
+
+two:
+  name: MyString
+  abbreviation: MyString
+  forum_thread_link: MyString
+  clan_thread_link: MyString
+  online_leaderboards_link: MyString
+  official_game_link: MyString

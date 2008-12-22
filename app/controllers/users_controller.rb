@@ -6,6 +6,7 @@ class UsersController < ApplicationController
   # render new.rhtml
   def new
     @user = User.new
+    @user.password = @user.password_confirmation = nil
 
     respond_to do |format|
       format.html

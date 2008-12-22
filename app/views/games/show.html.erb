@@ -1,0 +1,39 @@
+<h1><%= h( @game.name ) %></h1>
+
+<p>
+  <b>Name:</b>
+  <%= h( @game.name ) %>
+</p>
+
+<p>
+  <b>Abbreviation:</b>
+  <%= h( @game.abbreviation ) %>
+</p>
+
+<p>
+  <b>Forum Thread Link</b>
+  <%= link_to 'link', h( @game.forum_thread_link ) %>
+</p>
+
+<p>
+  <b>Game Night Thread Link</b>
+  <%= link_to 'link', h( @game.game_night_thread_link ) %>
+</p>
+
+<p>
+  <b>Clan Thread Link</b>
+  <%= link_to 'link', h( @game.clan_thread_link ) %>
+</p>
+
+<p>
+  <b>Online Leaderboards Link</b>
+  <%= link_to 'link', h( @game.online_leaderboards_link ) %>
+</p>
+
+<p>
+  <b>Official Game Link</b>
+  <%= link_to 'link', h( @game.official_game_link ) %>
+</p>
+
+<%= link_to 'Edit', edit_game_path( @game ) %> | 
+<%= link_to 'Back', games_path %>

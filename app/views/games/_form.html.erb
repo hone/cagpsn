@@ -1,0 +1,42 @@
+<% form_for( @game ) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </p>
+
+  <p>
+    <%= f.label :abbreviation %><br />
+    <%= f.text_field :abbreviation %>
+  </p>
+
+  <p>
+    <%= f.label :forum_thread_link %><br />
+    <%= f.text_field :forum_thread_link %>
+  </p>
+
+  <p>
+    <%= f.label :game_night_thread_link %><br />
+    <%= f.text_field :game_night_thread_link %>
+  </p>
+
+  <p>
+    <%= f.label :clan_thread_link %><br />
+    <%= f.text_field :clan_thread_link %>
+  </p>
+
+  <p>
+    <%= f.label :online_leaderboards_link %><br />
+    <%= f.text_field :online_leaderboards_link %>
+  </p>
+
+  <p>
+    <%= f.label :official_game_link %><br />
+    <%= f.text_field :official_game_link %>
+  </p>
+
+  <p>
+    <%= f.submit button_name %>
+  </p>
+<% end %>
