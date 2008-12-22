@@ -47,7 +47,7 @@ module Authentication
       end
       
       def authenticated?(password)
-        crypted_password == encrypt(password)
+        self[:crypted_password] == encrypt(password)
       end
       
       # before filter 
@@ -56,8 +56,9 @@ module Authentication
         self.salt = self.class.make_token if new_record?
         self.crypted_password = encrypt(password)
       end
+
       def password_required?
-        crypted_password.blank? || !password.blank?
+        self[:crypted_password].blank? || !password.blank?
       end
     end # instance methods
   end

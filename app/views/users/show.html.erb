@@ -17,6 +17,22 @@
 </p>
 
 <p>
+  <b>Headset:</b> <%= h( display_boolean( @user.headset ) ) %>
+</p>
+
+<p>
+  <b>Keyboard:</b> <%= h( display_boolean( @user.keyboard ) ) %>
+</p>
+
+<p>
+  <b>USB Camera:</b> <%= h( display_boolean( @user.keyboard ) ) %>
+</p>
+
+<p>
+  <b>Play Style:</b> <%= h( @user.play_style ) %>
+</p>
+
+<p>
   <b>Avatar:</b> <%= if not h( @user.avatar_url ).blank? then image_tag( h(@user.avatar_url) ) end -%>
 </p>
 
